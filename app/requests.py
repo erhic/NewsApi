@@ -22,4 +22,31 @@ def get_news():
     with urllib.request.urlopen(news_url)as url:
         news_data=url.read()
         news_response=json.loads(news_data)
+        
+        news_result=[]
+        
+        if news_response['articles']:
+            results_list=news_response['articles']
+           
+            news_result=process_result(results_list)
+            print(type(results_list)) 
+    return news_result
+   
+
+def process_result(new_list):
+    '''
+    function that process news list and make the a list of objects
+    '''
+    news_result=[]
+    for news_item in new_list:
+        title=news_item.get('title')
+        description=news_item.get('description')
+        urlToImage=news_item.get('urlToImage')
+        content=news_item.get('content')
+        publishedAt=news_item.get('publishedAt')
+    
+        news_obj=News(title,description,urlToImage,content,publishedAt)
+        
+        news_result.append(news_obj)
+    return news_result
     

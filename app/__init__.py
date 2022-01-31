@@ -2,12 +2,13 @@ from flask import Flask
 from config import config_options
 from flask_bootstrap import Bootstrap
 
-app = Flask(__name__)
-bootstrap = Bootstrap(app)
+
+
+bootstrap = Bootstrap()
 def create_app(config_name):
     # Initializing application
     app = Flask(__name__)
-     
+  
      # Creating the app configurations
     app.config.from_object(config_options[config_name])
 

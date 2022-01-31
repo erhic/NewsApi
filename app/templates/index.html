@@ -1,0 +1,23 @@
+ {%extends 'base.html'%} {%block content%}
+
+
+<h3 class="fw-bold h2 text-center"> Latest News </h3>
+{% for articles in articles %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 ">
+            <div class="card mx-2 d-flex ">
+                <img src="{{articles.urlToImage}}" width="200rem">
+                <div class="card-body">
+                    <h5 class="card-title">{{articles.title}}</h5>
+                    <h5 class="card-title">{{articles.content}}</h5>
+                    <h5 class="card-title">{{articles.publishedAt}})</h5>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock%}
+
+</html>
