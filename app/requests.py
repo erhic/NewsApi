@@ -42,10 +42,11 @@ def process_result(new_list):
         title=news_item.get('title')
         description=news_item.get('description')
         urlToImage=news_item.get('urlToImage')
+        url=news_item.get('url')
         content=news_item.get('content')
         publishedAt=news_item.get('publishedAt')
     
-        news_obj=News(title,description,urlToImage,content,publishedAt)
+        news_obj=News(title,description,urlToImage,url,content,publishedAt)
         
         news_result.append(news_obj)
     return news_result
