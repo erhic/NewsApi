@@ -20,7 +20,7 @@
 - HTML
 - PYTHON 3.8.10
 - FLASK 1.1.4
-- BOOTSTRAP 5
+- BOOTSTRAP V3
 
 ### Setup and Installion Process
 ----
