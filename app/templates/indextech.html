@@ -1,23 +1,20 @@
  {%extends 'base.html'%} {%block content%}
 
 
-<h3 class="fw-bold bg-light text-center text-danger bg-danger"> <strong>Latest BBC News </strong></h3>
-
-
+<h3 class="fw-bold bg-light text-center fs-3 bg-success"> <strong>Tech News</strong> </h3>
 
 <div class="container">
-    <div class="row mt-4 ">
+    <div class="row mt-4">
         <div class="col-md-2 ">
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          News Sources
-                        </button>
-                <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  News Sources
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="/">BBC</a><br>
                     <a class="dropdown-item" href="/tech">Tech</a>
                 </div>
             </div>
-
 
         </div>{% for articles in articles %}
         <div class="col-md-3 ">
