@@ -74,5 +74,8 @@ Email: ericngugi24@gmail.com
 ### Licence 
 ---
 
-[ LICENCE](LICENSE) 
+[ LICENCE](LICENCE) 
+ (link to MIT License )
+
+ [ LICENCE](LICENCE) 
  (link to MIT License )
